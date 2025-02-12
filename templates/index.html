@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linksmieji Luko and Alekso nuotykiai 2024</title>
+    <link rel="stylesheet" href="../static/CSS/style.css">
+</head>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="../static/scr/images/logo.png" alt="Logo">
+        <div class="nav-caption">
+            <h3> Adventures await! Rules can wait! </h3>
+        </div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="{{ url_for('statistics') }}" class="button-link">Statistika</a></li>
+    </ul>
+</nav>
+
+<body>
+    <h1>Linksmieji Luko and Alekso nuotykiai 2024</h1>
+    <div class="gallery">
+        <div class="month">
+            <h2>January</h2>
+            <a href="{{ url_for('month_view', month_num=1) }}"><img src="../static/scr/images/january.png" alt="January"></a>
+        </div>
+        <div class="month">
+            <h2>February</h2>
+            <a href="{{ url_for('month_view', month_num=2 ) }}"><img src="../static/scr/images/february.png" alt="February"></a>
+        </div>
+        <div class="month">
+            <h2>March</h2>
+            <a href="{{ url_for('month_view', month_num=3 ) }}"><img src="../static/scr/images/march.png" alt="March"></a>
+        </div>
+        <div class="month">
+            <h2>April</h2>
+            <a href="{{ url_for('month_view', month_num=4 ) }}"><img src="../static/scr/images/april.png" alt="April"></a>
+        </div>
+        <div class="month">
+            <h2>May</h2>
+            <a href="{{ url_for('month_view', month_num=5 ) }}"><img src="../static/scr/images/may.png" alt="May"></a>
+        </div>
+        <div class="month">
+            <h2>June</h2>
+            <a href="{{ url_for('month_view', month_num=6 ) }}"><img src="../static/scr/images/june.png" alt="June"></a>
+        </div>
+        <div class="month">
+            <h2>July</h2>
+            <a href="{{ url_for('month_view', month_num=7 ) }}"><img src="../static/scr/images/july.png" alt="July"></a>
+        </div>
+        <div class="month">
+            <h2>August</h2>
+            <a href="{{ url_for('month_view', month_num=8 ) }}"><img src="../static/scr/images/august.png" alt="August"></a>
+        </div>
+        <div class="month">
+            <h2>September</h2>
+            <a href="{{ url_for('month_view', month_num=9 ) }}"><img src="../static/scr/images/september.png" alt="September"></a>
+        </div>
+        <div class="month">
+            <h2>October</h2>
+            <a href="{{ url_for('month_view', month_num=10 ) }}"><img src="../static/scr/images/october.png" alt="October"></a>
+        </div>
+        <div class="month">
+            <h2>November</h2>
+            <a href="{{ url_for('month_view', month_num=11 ) }}"><img src="../static/scr/images/november.png" alt="November"></a>
+        </div>
+        <div class="month">
+            <h2>December</h2>
+            <a href="{{ url_for('month_view', month_num=12 ) }}"><img src="../static/scr/images/december.png" alt="December"></a>
+        </div>
+    </div>
+    <div class="form-container">
+        <h2>Pridėti naują nuotykį</h2>
+        <form id="eventForm" method="POST">
+            <input type="text" name="event" placeholder="Pavadinimas" required>
+            <input type="text" name="date" placeholder="Data (mm-dd)" required>
+            <button type="submit">Pridėti</button>
+        </form>
+    </div>
+</body>
+
+
+
+</html>

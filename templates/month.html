@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>January Events</title>
+    <link rel="stylesheet" href="../static/CSS/month_style.css">
+    <link rel="stylesheet" href="../static/CSS/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../static/scr/images/logo.png" alt="Logo">
+            <div class="nav-caption">
+                <h3> Adventures await! Rules can wait! </h3>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('statistics') }}" class="button-link">Statistika</a></li>
+            <li><a href="/" class="button-link">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="table-container">
+        <div>
+            <h2>Nuotykiai</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-data">Data</th>
+                    <th class="col-nuotykis">Nuotykis</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for event in events %}
+                <tr>
+                    <td class="col-data">{{ event[0] }}</td>
+                    <td class="col-nuotykis">{{ event[1] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <a href="/" class="button-link">Home</a>
+</body>
+</html>

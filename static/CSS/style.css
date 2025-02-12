@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #dcf8fc;
+    margin-left: 0.4rem;
+}
+
+h1 {
+    color: #4e0202;
+}
+
+h2 {
+    font-weight: 550;
+}
+
+h3 {
+    font-weight: 450;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #387888;
+    padding: 10px 20px;
+    border-bottom: #130101 solid 0.15rem;
+}
+
+.nav-caption {
+    margin-left: 2rem;
+}
+
+.logo img {
+    height: 70px;
+    border-radius: 0.5rem;
+}
+
+.logo {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: rgb(14, 1, 1);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #72cee6;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.month {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+}
+
+.month img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 0.5rem;
+}
+
+.month img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    margin-top: 4rem;
+}
+
+.form-container input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #72cee6;
+    color: rgb(17, 17, 17);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #54c9f3;
+    transform: scale(1.05);
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #72cee6;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-link:hover {
+    background-color: #54c9f3;
+    transform: scale(1.05);
+}
